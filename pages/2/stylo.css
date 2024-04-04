@@ -1,0 +1,27 @@
+.right-conteiner{
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    align-items: end;
+}
+
+.up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+}
+
+.text{
+
+}
+
+.uno{
+    width: 100%;
+    
+}
+
+.dos{
+    width: 100%;
+}
