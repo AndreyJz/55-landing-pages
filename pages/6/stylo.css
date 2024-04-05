@@ -6,6 +6,7 @@
 }
 
 .conteiner {
+    overflow-x: hidden;
     width: 98vi;
     display: flex;
     flex-direction: row-reverse;
