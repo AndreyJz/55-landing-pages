@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: stretch;
+    height: 20vw;
+    width: 95vw;
+    padding: 2% 0;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 60%;
+    font-size: 2.5em;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 40vw;
+}
+
+.pharagraph {
+    text-align: left;
+    width: 95%;
+    font-size: 1.1em;
+}
+
+.button {
+    transform: scale(1.01);
+    background-color: #252525;
+    width: 8em;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat ;
+    margin: 0 2vw;
+    width: 96vw;
+    height: 50vw;
+}
+
+@media (max-width: 991px) {
+    .info {
+        flex-direction: column;
+        height: 90%;
+        width: 95vw;
+        align-items: center;
+    }
+
+    .title {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .text {
+        width: 80vw;
+        align-items: center;
+    }
+
+    .pharagraph {
+        text-align: center;
+        margin: 3%;
+    }
+}

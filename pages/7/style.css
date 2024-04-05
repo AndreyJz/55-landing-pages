@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2%;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 90vw;
+    width: 24vw;
+    padding: 2% 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 70%;
+    margin: 3%;
+    font-size: 2.5em;
+}
+
+.number {
+    font-size: 1.5em;
+    color: rgba(37, 37, 37, 0.55);
+    margin: 0 3%;
+}
+
+.pharagraph {
+    text-align: left;
+    width: 95%;
+    font-size: 1.1em;
+    margin: 3%;
+}
+
+.image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat ;
+    align-self: center;
+    border-radius: 25px;
+    box-shadow: inset 0px -167px 101px -130px rgba(0,0,0,0.75);
+    width: 94%;
+    height: 37%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.image:hover {
+    transform: scale(1.01);
+}
+
+.image h4,.image p {
+    margin: 0 5% 4% ;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.image h4 {
+    font-size: 1.5em;
+}
+
+.image p {
+    font-size: 0.8em;
+}
+
+@media (max-width: 991px) {
+    .flex {
+        flex-direction: column;
+    }
+    .frame {
+        margin: 3% 0px;
+        width: 94%;
+        height: 90%;
+    }
+
+    .title {
+        width: 90%;
+        justify-content: center;
+        margin: 8%;
+    }
+
+    .pharagraph {
+        text-align: left;
+    }
+
+    .image {
+        height: 130vw;
+    }
+}
