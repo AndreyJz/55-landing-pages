@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(207, 231, 252);
+}
+.vuitton{
+    background-color: black;
+    text-decoration: none;
+    color: beige;
+    padding-inline: 13px;
+    padding-block: 5px;
+    border-radius: 10%;
+}

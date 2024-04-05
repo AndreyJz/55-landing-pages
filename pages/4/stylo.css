@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Sen", sans-serif;
+}
+
+.conteiner {
+    width: 98vi;
+    display: flex;
+    justify-content: space-around;
+}
+.left {
+    width: 45vw;
+}
+img {
+    width: 100%;
+}
+.rigth {
+    width: 45vw;
+}
+.upper {
+    height: 48%;
+    font-size: 1.4rem;
+}
+.vuitton {
+    font-size: 1rem;
+    background-color: black;
+    color: #fff;
+    padding-inline: 30px;
+    padding-block: 10px;
+    border-radius: 10%;
+}
+.downer {
+    height: 50%;
+    font-size: 1.3rem;
+}
+.number {
+    color: #31313182;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.first {
+    height: 50%;
+}
+.second {
+    height: 50%;
+}
+@media (max-width:800px) {
+    .conteiner{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .upper , .downer{
+        margin-bottom: 5rem;
+    }
+    .left{
+        width: 85vw;
+        margin-bottom: 1rem;
+    }
+    .rigth{
+        width: 85vw;
+    }
+}
