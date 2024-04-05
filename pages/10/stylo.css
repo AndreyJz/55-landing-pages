@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Sen", sans-serif;
+}
+
+body{
+    background-color: #232323;
+    overflow-x: hidden;
+}
+
+.conteiner {
+    width: 100vi;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background-color: transparent;
+}
+.left {
+    width: 45vi;
+    height: max-content;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+}
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    gap:1rem;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+
+    img{
+        width: 100%;
+    }
+}
+.rigth {
+    width: 25vw;
+}
+.upper {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    margin-top: 5rem;
+    font-size: 2.3rem;
+}
+
+h1{
+    font-size: 7rem;
+    margin: 0;
+}
+h1:nth-of-type(1){
+    color: #FEC3C7;
+}
+h1:nth-of-type(2){
+    color: #9AD7F3;
+}
+h1:nth-of-type(3){
+    color: #6BDFDA;
+}
+p{
+    font-size: 1.7rem;
+    padding-bottom: 2rem;
+}
+
+.vuitton {
+    font-size: 1.5rem;
+    background-color: #FFF;
+    color: black;
+    padding-inline: 50px;
+    padding-block: 20px;
+    border-radius: 30px;
+}
+@media (max-width:800px) {
+    .conteiner{
+        width: fit-content;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+    .upper , .downer{
+        margin-bottom: 5rem;
+        align-items: center;
+    }
+    .left{
+        width: 98vw;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    .grid{
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    }
+    .rigth{
+        width: 85vw;
+    }
+}
