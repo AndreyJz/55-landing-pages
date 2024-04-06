@@ -3,6 +3,7 @@
 *{
     box-sizing: border-box;
     font-family: "Sen", sans-serif;
+    overflow-x: hidden;
 }
 
 body{
@@ -11,7 +12,7 @@ body{
 }
 
 .conteiner{
-    overflow-x: ;
+    overflow-y: hidden;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -74,7 +75,7 @@ body{
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.141) 0%, rgba(0, 0, 0, 0.266) 50%, rgba(0, 0, 0, 0.331) 100%);
     backdrop-filter: blur(10px);
     border-radius: 25px;
-    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(19%, 1fr));
     gap:3rem;
     padding: 1rem;
     width: 91%;
@@ -97,17 +98,18 @@ body{
         position: absolute;
         right: -90vi;
         transform: scaleX(-1);
-        align-self: flex-end;
+        justify-self: flex-start;
         width: 60rem;
     }
     .text{
+        margin-left: 1rem;
         width: 60vi;
         height: 66vi;
         h1{
-            font-size: 5.5vi;
+            font-size: 6vi;
         }
         p{
-            font-size: 3vi;
+            font-size: 3.7vi;
             width: 50vi;
         }
     }
@@ -117,14 +119,19 @@ body{
         padding-block: 1.5vi;
     }
     .conteiner{
-        height: 90vi;
+        height: 200vi;
     }
     .grid{
+        /* margin-top: 7rem; */
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         text-align: center;
         font-size: 4vi;
         width: 85%;
+
+        .block1, .block2, .block3, .block4{
+            overflow-y: hidden;
+        }
 
         p{
             font-size: 3vi;
@@ -134,4 +141,7 @@ body{
             width: 35%;
         }
     }
+}
+@media (max-width:500px){
+
 }
