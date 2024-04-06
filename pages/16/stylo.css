@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Sen", sans-serif;
+}
+
+body{
+    background: rgb(4,62,73);
+    background: linear-gradient(360deg, rgb(16, 73, 89) 0%, rgb(5, 26, 32) 100%);
+}
+
+.conteiner{
+    overflow-x: ;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 0;
+    height: 70vi;
+    width: 100%;
+}
+
+.cabalo{
+    position: absolute;
+    align-self: flex-end;
+    z-index: -1;
+    width: 71vi;
+}
+
+.text {
+    display: flex;
+    color: #fff;
+    background: rgb(0,0,0);
+    background: linear-gradient(344deg, rgba(0,0,0,0.1516981792717087) 0%, rgba(0,0,0,0.5046393557422969) 50%, rgba(0,0,0,0.804359243697479) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 3vi;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 40vi;
+    height: 33vi;
+    font-size: 2.3vi;
+
+    h1{
+        font-size: 4vi;
+        margin: 0;
+    }
+
+    p{
+        font-size: 1.5vi;
+        width: 35vi;
+    }
+
+    img{
+        width: 6vi;
+    }
+}
+
+.vuitton {
+    font-size: 1.4vi;
+    background-color: #63E1E1;
+    color: #000;
+    padding-inline: 3.2vi;
+    padding-block: 1vi;
+    border-radius: 35px;
+    box-shadow: 0px 0px 20px 0px #63e1e133;
+}
+
+.grid{
+    display:grid;
+    background: rgb(0,0,0);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.141) 0%, rgba(0, 0, 0, 0.266) 50%, rgba(0, 0, 0, 0.331) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    gap:3rem;
+    padding: 1rem;
+    width: 91%;
+    align-self: center;
+    justify-self: flex-end;
+    color: #fff;
+    font-size: 1.5vi;
+
+    p{
+        font-size: 1.2vi;
+    }
+
+    img{
+        width: 13%;
+    }
+}
+
+@media (max-width:800px){
+    .cabalo{
+        position: absolute;
+        right: -90vi;
+        transform: scaleX(-1);
+        align-self: flex-end;
+        width: 60rem;
+    }
+    .text{
+        width: 60vi;
+        height: 66vi;
+        h1{
+            font-size: 5.5vi;
+        }
+        p{
+            font-size: 3vi;
+            width: 50vi;
+        }
+    }
+    .vuitton{
+        font-size: 3vi;
+        padding-inline: 5.5vi;
+        padding-block: 1.5vi;
+    }
+    .conteiner{
+        height: 90vi;
+    }
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+        font-size: 4vi;
+        width: 85%;
+
+        p{
+            font-size: 3vi;
+        }
+    
+        img{
+            width: 35%;
+        }
+    }
+}
