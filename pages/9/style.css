@@ -135,7 +135,7 @@ background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(200,204,207,1) 0%, r
     .right-img {
         align-self: center;
         position: relative;
-        top: 20%;
+        margin-top: 25vw;
         width: 90vw;
         height: 85vw;
         /* margin: 0 0 24%; */
@@ -163,7 +163,7 @@ background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(200,204,207,1) 0%, r
     .flex {
         flex-direction: column;
         position: relative;
-        top: 90%;
+        margin-top: 65vw;
         width: 90%;
         height: 900%;
         padding: 20% 10%;
