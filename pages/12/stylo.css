@@ -133,9 +133,6 @@
     .conteiner{
         width: fit-content;
         flex-direction: column-reverse;
-        /* align-items: center; */
-        /* justify-items: center; */
-        /* justify-content: center; */
         text-align: center;
     }
     .text{
@@ -146,10 +143,18 @@
         align-items: center;
         height: max-content;
 
+        h1{
+            font-size: 2.5rem;
+        }
         p{
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             width: 80vi;
         }
+    }
+    .vuitton{
+        font-size: 1.3rem;
+        padding-inline: 45px;
+        padding-block: 15px;
     }
     .downer{
         display: flex;
@@ -160,34 +165,31 @@
         
         p{
             padding: 1rem;
-            font-size: 1.3rem;
-            width: 80vi;
+            font-size: 1.1rem;
+            width: 63vi;
         }
     }
     .cosas{
-        width: 75%;
+        width: 90%;
         height: max-content;
-        margin-left: 3rem;
-        margin-right: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
         margin-bottom: 1rem;
     }
     .wave{
-        /* top: 0; */
-        /* width: 87.5%; */
+        top: 3.5vi;
         right: 9vi;
     }
     .ims{
         position: relative;
-        /* top: 0%; */
-        gap:1rem;
+        gap:.5rem;
         display: flex;
         justify-content: center;
-        height: 50vi;
-        /* margin-bottom: 2rem; */
+        height: 60vi;
 
-        /* img{
-            width: 18%;
-        } */
+        img{
+            width: 30%;
+        }
     }
     .items{
         position: absolute;
