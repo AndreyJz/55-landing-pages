@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vi;
+    width: 100%;
+    padding: 3rem;
+    /* background-color: rebeccapurple; */
+}
+
+.upper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vi;
+    width: 100%;
+    gap: 0rem;
+}
+
+.text{
+    display: flex;
+    color: #000;
+    border-radius: 25px;
+    padding: 2vi;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 40vi;
+    height: 24vi;
+    font-size: 2.3vi;
+
+    h1{
+        font-size: 4vi;
+        margin: 0;
+    }
+
+    p{
+        font-size: 1.5vi;
+        width: 25vi;
+    }
+}
+
+.vuitton {
+    font-size: 1.4vi;
+    background-color: #000;
+    color: #fff;
+    padding-inline: 3.2vi;
+    padding-block: 1vi;
+    border-radius: 35px;
+}
+
+.simbol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 24vi;
+    width: 100%;
+
+    .wave{
+        width: 25vi
+    };
+    .circle{
+        width: 12vi;
+    }
+}
+
+.downer{
+    display: flex;
+    margin-top: 3rem;
+    text-align: center;
+    gap: 1vi;
+    height: 55vi;
+}
+
+.group{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.fourth, .mezcla5{
+    align-self: flex-end;
+}
+
+.first ,.fifth{
+    img{
+        width: 14vi;
+    }
+}
+
+.third{
+    img{
+        width: 21vi;
+    }
+}
+
+.second, .fourth{
+    img{
+        width: 19vi;
+    }
+}
+
+.first, .second, .fourth, .fifth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+i{
+    text-align: left;
+    font-size: 2.2vi;
+    color: #000;
+    width: max-content;
+}
+
+hr{
+    height: .3vi;
+    width: 80%;
+    margin: 20px auto;
+    background-color: black;
+    border: none;
+}
+
+@media (max-width:700px) {
+    .conteiner{
+        padding: 1vi;
+        height: max-content;
+        width: 100vw;
+    }
+    .upper{
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        justify-content: center;
+        align-items: center;
+        height: 12rem;
+        width: 23rem;
+        gap: 0rem;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        width: 60vi;
+        height: max-content;
+        font-size: 2.3vi;
+
+        h1{
+            font-size: 9vi;
+            margin: 0;
+        }
+
+        p{
+            font-size: 4.2vi;
+            width: 50vi;
+        }
+    }
+    .vuitton {
+        font-size: 3vi;
+        background-color: #000;
+        color: #fff;
+        padding-inline: 4vi;
+        padding-block: 1.5vi;
+        border-radius: 35px;
+    }
+    .simbol{
+        position: absolute;
+        /* display: none; */
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 24vi;
+        width: 90vi;
+
+        .wave{
+            transform: rotate(90deg);
+            width: 4rem;
+            margin: 1rem;
+        };
+        .circle{
+            width: 2rem;
+        }
+    }
+
+    i{
+        text-align: left;
+        font-size: 5vi;
+        color: #000;
+        width: max-content;
+    }
+    
+    hr{
+        height: .5vi;
+        width: 50%;
+        margin: 20px auto;
+        border: none;
+    }
+
+    .downer{
+        position: relative;
+        flex-direction: column;
+        width: 23rem;
+        height: 120vi;
+    }
+
+    .first ,.fifth{
+        img{
+            width: 11rem;
+        }
+    }
+    .third{
+        img{
+            width: 8rem;
+        }
+    }
+    .second, .fourth{
+        img{
+            width: 6rem;
+        }
+    }
+
+    .mezcla1{
+        display: flex;
+        gap: 1rem;
+        order: -2;
+    }
+
+    .mezcla5{
+        position: absolute;
+        height: 85vi;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        order: -1;
+    }
+
+    .group{
+        margin-top: 2rem;
+        align-self: center;
+        width: 90vi;
+    }
+}
