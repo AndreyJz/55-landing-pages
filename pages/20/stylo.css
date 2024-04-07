@@ -167,7 +167,8 @@
         width: 76vi;
         height: max-content;
         justify-content: center;
-        gap: 2rem   ;
+        gap: 2rem;
+        border-radius: 30px;
         align-items: center;
     }
     .grid{
