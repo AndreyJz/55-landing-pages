@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: "Poppins";
+}
+
+.bg {
+    background-color: #EFC356;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 8%;
+    /* padding: 3% 2%; */
+    color: #fff;
+    gap: 1rem;
+    width: 40vw;
+    height: 80vh;
+
+    h1{
+        font-size: 3.7rem;
+        margin: 0;
+    }
+
+    p{
+        font-size: 1.2rem;
+        height: max-content;
+    }
+}
+
+.vuitton {
+    font-size: 1.2rem;
+    background-color: #7EB5E1;
+    color: #fff;
+    padding-inline: 2vi;
+    padding-block: 1vi;
+    border-radius: 35px;
+}
+
+.upper{
+    display: flex;
+    height: 90vh;
+}
+
+.dog{
+    display: flex;
+    margin-right: 1%;
+    padding: 3% 2%;
+    width: 50vw;
+
+    img{
+        width: 100%;
+    }
+}
+
+.pups {
+    background-color: #FFF;
+    align-self: center;
+    position: absolute;
+    top: 85%;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    border-radius: 30px;
+    padding-block: 2rem;
+    padding-inline: 3rem;
+}
+
+.number {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.block{
+    font-size: 1.1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 991px) {
+    .bg {
+        align-items: center;
+        height: 130vh;
+    }
+    .upper{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: max-content;
+    }
+    .dog{
+        margin-top: 10vi;
+        padding: 0;
+    }
+    .text {
+        text-align: center;
+        align-items: center;
+        width: 90%;
+        height: max-content;
+        margin-bottom: 2rem;
+    }
+    .pups {
+        position:relative;
+        height: max-content;
+        top: 0;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        padding-block: 2rem;
+        padding-inline: 2rem;
+    }
+    .smol-img{
+        width: 90%;
+        height: 50vw;
+    }
+}
