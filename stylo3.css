@@ -8,7 +8,7 @@ body{
     background-color: #fff;
     width: 100%;
     height: 48vi;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .pages{
@@ -26,14 +26,6 @@ body{
     align-self: center;
 }
 
-#left img{
-    transition: 5s transform ease-in-out;
-}
-
-#left:checked + label{
-    height: 300px;
-}
-
-#left:checked + label img {
-    transform: rotate(-180deg);
+#left:checked + .pages{
+    scroll-margin-left: 50%;
 }
