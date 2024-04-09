@@ -5,124 +5,219 @@
     font-family: "Sen", sans-serif;
 }
 
+img{
+    width: 100%;
+}
+
 body{
     display: flex;
     justify-content: center;
 }
 
+.blur{
+    margin: 0.5rem;
+    position: fixed;
+    z-index: -2;
+    align-self: center;
+    height: 100%;
+    filter: blur(1.5px);
+}
+
+.right{
+    align-self: center;
+    height: 100%;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    gap: 2rem;
+    display: flex;
+}
+
 .conteiner{
+    position: relative;
     border: solid 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 90vw;
-    height: 150vh;
+    width: 100%;
+    height: max-content;
     color: #000;
-    gap: 1rem;
 }
 
 .upper{
     width: 100%;
     border: solid 1px;
     font-weight: bold;
+    
+    h1{
+        font-size: 3rem;
+        margin: 0;
+    }
 }
 
-.rightimg , .leftimg{
+.downer{
+    margin-block: 2rem;
+    width: 90%;
+}
+
+.text {
     display: flex;
     flex-direction: column;
-}
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 85vw;
+    height: 100%;
+    text-shadow: 1px 5px 8px rgb(146, 146, 146);
 
-.left{
+    h1{
+        font-size: 2rem;
+        margin: 0;
+    }
 
-    /* width: 50vi; */
-}
-
-.right{
-    /* width: 50vi; */
-    display: flex;
-}
-
-h1{
-    font-size: 7rem;
-    margin: 0;
+    p{
+        font-size: 1.2rem;
+        height: max-content;
+    }
 }
 
 .vuitton {
     font-size: 1.2rem;
     background-color: #333333;
-    box-shadow: 15px 15px 0px #1d1d1d;
+    text-shadow: none;
+    box-shadow: 7px 7px 0px #252525;
     color: #fff;
-    padding-inline: 2vi;
-    padding-block: 1vi;
+    padding-inline: 5vi;
+    padding-block: 3vi;
     border-radius: 35px;
 }
 
-.para{
-    width: 82%;
-    font-size: 2rem;
+.rightimg , .leftimg{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+.star{
+    align-self: center;
+    width: 82%;
 }
 
 .grid {
-    margin-bottom: 2rem;
-    display:grid;
-    background-color: #F8D046;
-    justify-items: center;
-    text-align: left;
-    grid-template-columns: repeat(auto-fill, minmax(17%, 1fr));
-    gap:4rem;
-    border: 1px solid black;
-    box-shadow: 15px 15px 0px #D7AA3B;
-    border-radius: 40px;
-    padding: 2rem;
-    width: 97%;
-    font-size: 1.7rem;
-
-    img{
-        width: 35%;
-    }
-}
-
-
-.block{
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.085) 0%, rgba(255, 255, 255, 0.266) 50%, rgba(255, 255, 255, 0.331) 100%);
-    backdrop-filter: blur(10px);
-    border-radius: 25px;
-    border: solid 1px #fff;
-    font-size: 1.1rem;
-    display: flex;
-    gap: 1rem;
-    width: 27vi;
-    padding-inline: 1rem;
-    padding-block: .5rem;
+    backdrop-filter: blur(5px);
+    grid-template-columns: 1fr 1fr;
+    margin-top:2rem;
+    display:grid;
+    justify-items: center;
+    text-align: left;
+    gap:2rem;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 2rem;
+    width: 100%;
+    font-size: 1.5rem;
 }
 
-@media (max-width:710px) {
-    
-    h1{
-        font-size: 9vi;
-    }
-    .para{
-        font-size: 5vi;
-    }
-    .grid{
-        gap: 1rem;
-    }
-    .block{
+@media (min-width:700px) {
+    .conteiner{
+        position: relative;
+        border: solid 1px;
+        display: flex;
         flex-direction: column;
-        font-size: 3.2vi;
-        gap: 0;
-        width: 40vi;
         align-items: center;
-        img{
-            width: 25%;
+        text-align: center;
+        width: 95%;
+        height: max-content;
+        color: #000;
+    }
+
+    .downer{
+        margin-block: 0;
+        align-self: flex-start;
+        width: 50vi;
+        height: max-content;
+    }
+
+    .text {
+        align-self: flex-start;
+        display: flex;
+        padding: 3vi;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        align-items: flex-start;
+        gap: 0;
+        width: 50vi;
+        max-width: max-content;
+        font-size: 2.3vi;
+    
+        h1{
+            font-size: 4vi;
+            width: 40vi;
+            margin: 0;
         }
+    
+        p{
+            font-size: 2vi;
+            width: 40vi;
+        }
+        
+    }
+
+    .vuitton {
+        font-size: 1.2rem;
+        background-color: #333333;
+        text-shadow: none;
+        box-shadow: 7px 7px 0px #252525;
+        color: #fff;
+        padding-inline: 2vi;
+        padding-block: 1vi;
+        border-radius: 35px;
+    }
+
+    .right{
+        height: max-content;
+        justify-content: flex-end;
+    }
+
+    .grid {
+        background: none;
+        background: none;
+        backdrop-filter: none;
+        margin-top:2rem;
+        gap:2rem;
+        border: 1px solid black;
+        border-radius: 40px;
+        padding: 2rem;
+        padding-bottom: 0.5rem;
+        width: 100%;
+        font-size: 1.7rem;
+
+        p{
+            font-size: 1.5vi;
+            width: 100%;
+        }
+
+        hr{
+            margin-left: 0;
+            height: 10px;
+            width: 40%;
+            background-color: #333333;
+        }
+    }
+
+    .blur{
+        margin: 3.9vi 0;
+        border: solid 1px;
+        height: max-content;
+        position: absolute;
+        z-index: 1;
+        align-self: flex-end;
+        justify-content: flex-end;
+        filter: none;
     }
 }
