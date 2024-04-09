@@ -33,14 +33,14 @@
     font-size: 2.3rem;
 
     h1{
-        font-size: 3.3rem;
+        font-size: 4vi;
         margin: 0;
     }
 
     p{
-        font-size: 1.2rem;
+        font-size: 1.4vi;
         padding-bottom: rem;
-        width: 28rem;
+        width: 35vi;
     }
 }
 .downer{
@@ -51,9 +51,9 @@
     justify-content: flex-end;
 
     p{
-        padding: 1.5rem;
+        padding: 5vi;
         font-size: 1.03rem;
-        width: 28rem;
+        width: 35vi;
     }
 } 
 .vuitton {
@@ -136,6 +136,7 @@
         text-align: center;
     }
     .text{
+        height: max-content;
         position: relative;
         justify-content: space-around;
     }
@@ -170,6 +171,7 @@
         }
     }
     .cosas{
+        position: relative;
         width: 90%;
         height: max-content;
         margin-left: 2rem;
